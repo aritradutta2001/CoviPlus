@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+
+}
+
+body {
+    width: 100%;
+	
+}
+
+.input-color .btn {
+    display: block;
+    width: 10%;
+	height:8%;
+    padding: 4px 8px;
+    text-align: center;
+    border: none;
+    background:blue;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.input-color .btn:hover {
+    transform: translateY(-5px);
+    background: #6c5ce7;
+}
+<style>
+.dropbtn {
+ 
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus 
+{
+outline: 3px solid #ddd;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover 
+{
+background-color: #ddd;
+}
+
+.show
+{
+display: block;
+}
+</style>
+
+
+
+.menu-bar
+{
+	background: #2874F0;
+	text-align: center;
+}
+.menu-bar hover {
+    transform: translateY(-5px);
+    background: #6c5ce7;
+}
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style : none;
+	color:  #fff;
+}
+.menu-bar ul li
+{
+	width: 100%;
+	height:10%;
+	margin:5px;
+	padding:5px;
+}	
+.menu-bar ul li a
+{
+	text-decoration:none;
+	color:#fff;
+	border: 1px solid #transparent;
+	transition: 0.6s ease;
+}
+.menu-bar ul li a:hover{
+	background-color: transparent;
+	color: #000;
+
+}
+.sub-menu-2 ul li a
+{
+	text-decoration:none;
+	color:#fff;
+	border: 1px solid #transparent;
+	transition: 0.6s ease;
+}	
+.sub-menu-2 ul li a:hover
+{
+	background-color: #000;
+	color: #000;
+
+}
+.active, .menu-bar ul li:hover
+{
+	background: none;
+	border-radius: 3px;
+}	
+.menu-bar .fa
+{
+	margin-right: 8px;
+}
+.sub-menu-1
+{
+display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+display : block;
+position: absolute;
+background :#2874F0 ;
+margin-top:8px;
+margin-left:-15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display: block;
+	margin: 10px;
+}	
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+	width: 150px;
+	padding:10px;
+    background : transparent;
+	border-bottom : 1px dotted #fff ;
+	border-radius:1;
+	text-align:left;
+
+}
+
+.zoom_pro
+{
+	border:0px solid red;
+	width:370px;
+	height:265px;
+	float:left;
+	margin-top:20px;
+	margin-bottom:20px;
+	box-shadow:0 4px 8px 0 rgba(0,0,0,0.4),0 6px 20px 0 rgba(0,0,0,0.35);
+	transition:transform 1s;
+}
+.zoom_pro :hover
+{
+	transform:scale(2);
+}
+
+.btn{
+
+
+cursor:pointer;
+border-radius:25px;
+width: 300px;
+height: 100px;
+transition: .3s;
+}
+.btn:hover {
+    transform: translateY(-5px);
+    background: #6c5ce7;
+}
+
+.btn1{
+	
+
+
+cursor:pointer;
+opacity:0.9;
+border-radius:25px;
+width: 300px;
+height: 100px;
+transition: .3s;
+
+}
+
+.btn1:hover {
+    transform: translateY(-5px);
+    background: #6c5ce7;
+}
+.btn2{
+
+cursor:pointer;
+border-radius:8px;
+width: 300px;
+height: 100px;
+transition: .3s;
+
+}
+.btn2:hover {
+    transform: translateY(-5px);
+    background: #6c5ce7;
+}
+.btn3{
+	
+
+
+cursor:pointer;
+border-radius:8px;
+width: 300px;
+height: 100px;
+transition: .3s;
+
+}
+.btn3:hover {
+    transform: translateY(-5px);
+    background: #6c5ce7;
+}
+.space{
+	background-color:#fff;
+	width: 100%;
+height: 8%;
+}
+#highlighted {
+  position: relative;
+  background-color: #2874F0;
+}
+#highlighted .container-fluid h1, 
+#highlighted .container-fluid p {
+  color: #fff;
+}
+#highlighted .container-fluid h1 {
+  font-size: 54px;
+  font-family: Verlag,museo-sans,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+#content {
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.interior-page {
+  background-color: #FFF;
+  padding-bottom: 30px;
+}
+#highlighted+#content.interior-page .interior-page-nav {
+  margin-top: -4em;
+}
+#highlighted+#content.interior-page .interior-page-nav, 
+.interior-page .interior-page-nav {
+  padding-left: 0;
+}
+.sidebar {
+  margin-top: 2em;
+}
+.content-area-right {
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.container-fluid>.row h2.crumb-title {
+  margin-bottom: 0;
+}
+.page-title {
+  min-height: 50px;
+}
+.page-title, ul {
+  margin: 0;
+  list-style: none;
+}
+.content-crumb-div {
+  margin: 5px 0 20px;
+}
+a {
+  text-decoration: none;
+}
+.container-fluid .row .modal, 
+.page .modal {
+  position: fixed;
+  top: 35%;
+}
+#highlighted+#content.interior-page .interior-page-nav, 
+.interior-page .interior-page-nav {
+  padding-left: 0;
+}
+#highlighted+#content.interior-page .interior-page-nav {
+  margin-top: -4em;
+}
+.dynamicDiv.panel-group {
+  border: 1px solid #E7E9E9;
+  margin-left: 30px;
+}
+.panel-group {
+  margin-bottom: 0;
+  background-color: #fff;
+}
+.panel-group .panel {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+.panel-group .panel-heading {
+  padding: 0;
+  border: none;
+}
+.panel-default>.panel-heading {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+.panel-group .panel-heading .panel-title {
+  font-size: 1.1em;
+  font-family: Verlag,museo-sans,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.interior-page-nav .panel-group .panel-heading .panel-title a {
+  background: 0 0;
+}
+.panel-group .panel-heading .panel-title a {
+  display: block;
+  padding: 15px 45px 15px 15px;
+  background: url(/resources/images/misc/icon_accordion-open.png) 95% center no-repeat #f6f6f6;
+}
+span.subMenuHighlight, 
+ul.panel-heading li.panel-title a:hover {
+  color: #ed3c95;
+}
+.panel-group .panel-heading .panel-title {
+  font-size: 1.1em;
+  font-family: Verlag,museo-sans,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+ul.panel-heading {
+  margin-bottom: 1px;
+}
+.panel-group .panel-heading .panel-title a {
+  display: block;
+  padding: 15px 45px 15px 15px;
+  background: url(/resources/images/misc/icon_accordion-open.png) 95% center no-repeat #f6f6f6;
+}
+.panel-group {
+  margin-bottom: 0;
+  background-color: #fff;
+}
+.label-default {
+  background-color: #fff;
+  margin-top: 10px;
+}
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-control {
+  border-radius: 0;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #dc143c;
+  border-color: #ea3e10;
+  width: 100%;
+}
+.btn-block {
+  display: block;
+}
+.btn {
+  padding: 8px 28px;
+  font-weight: 400;
+  -webkit-transition: background .3s ease-in;
+  transition: background .3s ease-in;
+  white-space: normal;
+  border-width: 0 0 1px;
+}
+.content-area-right {
+  margin-top: 10px;
+}
+
+@media (min-width: 992px)
+  #highlighted .container-fluid 
+  {
+    margin-bottom: 2.5rem;
+  }
+}
